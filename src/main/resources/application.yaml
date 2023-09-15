@@ -1,0 +1,20 @@
+# Documentazione per il file YAML di configurazione Spring Cloud Gateway
+
+# Configurazione del server Spring Cloud Gateway
+
+
+  server:
+    port: 8080
+  spring.cloud.gateway.routes:
+    - id: service1
+      uri: http://localhost:8081
+      predicates:
+        - Path=/service1/**
+    - id: service2
+      uri: http://localhost:8082
+      predicates:
+        - Path=/service2/**
+    - id: hl7
+      uri: http://localhost:8083
+      predicates:
+        - Path=/hl7/**
