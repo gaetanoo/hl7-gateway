@@ -34,6 +34,7 @@ public class HapiService{
      */
     public static void createMessage()throws HL7Exception,IOException,RuntimeException{
 
+
              HapiContext context = new DefaultHapiContext();
              System.out.println("Creating ADT A01 message...");
              ADT_A01 adtMessage = (ADT_A01) AdtMessageFactory.createMessage("A01");
