@@ -1,5 +1,6 @@
 ## General Information 
 
+
 This application is an example of using Spring Boot and the HAPI (Healthcare API for Java) library
 for managing and creating HL7 messages. The application includes several classes including:
 
